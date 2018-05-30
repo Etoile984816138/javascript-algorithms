@@ -18,6 +18,7 @@ export default class LinkedList {
   /**
    * @param {*} value
    * @return {LinkedList}
+   * 初始化头结点
    */
   prepend(value) {
     // Make new node to be a head.
@@ -29,11 +30,13 @@ export default class LinkedList {
   /**
    * @param {*} value
    * @return {LinkedList}
+   * 插入节点
    */
   append(value) {
-    const newNode = new LinkedListNode(value);
+    const newNode = new LinkedListNode(value); // 实例化一个新节点
 
     // If there is no head yet let's make new node a head.
+    // 如果没有头结点需要创建一个
     if (!this.head) {
       this.head = newNode;
       this.tail = newNode;
@@ -42,8 +45,11 @@ export default class LinkedList {
     }
 
     // Attach new node to the end of linked list.
+    // 将节点插入链表结尾
+    // this.tail保持对链表最后一个节点的引用，将新加入的节点加入之前的next中
     this.tail.next = newNode;
-    this.tail = newNode;
+    // 改变this.tail的指向，指向新加入的节点
+    this.tail = newNode; 
 
     return this;
   }
@@ -51,6 +57,7 @@ export default class LinkedList {
   /**
    * @param {*} value
    * @return {LinkedListNode}
+   * 删除节点
    */
   delete(value) {
     if (!this.head) {
@@ -60,12 +67,14 @@ export default class LinkedList {
     let deletedNode = null;
 
     // If the head must be deleted then make 2nd node to be a head.
+    // 如果要删除的节点是头节点，则将第二个节点变成头结点
     if (this.compare.equal(this.head.value, value)) {
       deletedNode = this.head;
       this.head = this.head.next;
     }
 
-    let currentNode = this.head;
+    // 从头结点开始查找
+    let currentNode = this.head; 
 
     if (currentNode !== null) {
       // If next node must be deleted then make next node to be a next next one.
@@ -188,3 +197,8 @@ export default class LinkedList {
     return this.toArray().map(node => node.toString(callback)).toString();
   }
 }
+
+/**
+ * TODO
+ * 在指定节点后插入某元素
+ */
