@@ -17,11 +17,11 @@ export default class Queue {
     return this.linkedList.head.value;
   }
 
-  enqueue(value) {
+  enqueue(value) { // 入队
     this.linkedList.append(value);
   }
 
-  dequeue() {
+  dequeue() { // 出队
     const removedHead = this.linkedList.deleteHead();
     return removedHead ? removedHead.value : null;
   }
