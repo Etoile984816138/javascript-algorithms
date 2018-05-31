@@ -4,10 +4,10 @@ const HEAD_CHARACTER = '*';
 
 export default class Trie {
   constructor() {
-    this.head = new TrieNode(HEAD_CHARACTER);
+    this.head = new TrieNode(HEAD_CHARACTER); // 构建字典树
   }
 
-  addWord(word) {
+  addWord(word) { // 字典树中添加单词
     const characters = Array.from(word);
     let currentNode = this.head;
     for (let charIndex = 0; charIndex < characters.length; charIndex += 1) {
@@ -16,7 +16,7 @@ export default class Trie {
     }
   }
 
-  suggestNextCharacters(word) {
+  suggestNextCharacters(word) { // 返回下一个子节点
     const lastCharacter = this.getLastCharacterNode(word);
 
     if (!lastCharacter) {
@@ -30,7 +30,7 @@ export default class Trie {
     return !!this.getLastCharacterNode(word);
   }
 
-  getLastCharacterNode(word) {
+  getLastCharacterNode(word) { // 判断单词是否存在，存在返回最后一个节点
     const characters = Array.from(word);
     let currentNode = this.head;
     for (let charIndex = 0; charIndex < characters.length; charIndex += 1) {
