@@ -15,22 +15,22 @@ _Read this in other languages:_
 
 数据结构是在计算机中组织和存储数据的一种特殊方式，它可以高效地访问和修改数据。更确切地说，数据结构是数据值的集合，它们之间的关系、函数或操作可以应用于数据。
 
-* [链表](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/linked-list)
-* [队列](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/queue)
-* [栈](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/stack)
-* [哈希表](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/hash-table)
-* [堆](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/heap)
-* [优先队列](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/priority-queue)
-* [字典树](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/trie)
-* [树](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/tree)
-    * [二分查找](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/tree/binary-search-tree)
-    * [AVL 树](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/tree/avl-tree)
+* [链表](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/linked-list/README_zh-CN.md)
+* [队列](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/queue/README_zh-CN.md)
+* [栈](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/stack/README_zh-CN.md)
+* [哈希表](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/hash-table/README_zh-CN.md)
+* [堆](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/heap/README_zh-CN.md)
+* [优先队列](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/priority-queue/README_zh-CN.md)
+* [字典树](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/trie/README_zh-CN.md)
+* [树](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/tree/README_zh-CN.md)
+    * [二分查找](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/tree/binary-search-tree/README_zh-CN.md)
+    * [AVL 树](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/tree/avl-tree/README_zh-CN.md)
     * 红黑树
     * 后缀树
     * 线段树 或 间隔树
     * 二叉索引树
-* [图](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/graph) (有向图与无向图)
-* [并查集](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/disjoint-set)
+* [图](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/graph/README_zh-CN.md) (有向图与无向图)
+* [并查集](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/disjoint-set/README_zh-CN.md)
 
 ## 算法
 

@@ -3,12 +3,13 @@ export default class Graph {
    * @param {boolean} isDirected
    */
   constructor(isDirected = false) {
-    this.vertices = {};
-    this.edges = {};
-    this.isDirected = isDirected;
+    this.vertices = {}; // 顶点
+    this.edges = {}; // 边
+    this.isDirected = isDirected; // 有向图/无向图
   }
 
   /**
+   * 添加顶点
    * @param {GraphVertex} newVertex
    * @returns {Graph}
    */
@@ -19,6 +20,7 @@ export default class Graph {
   }
 
   /**
+   * 获取顶点
    * @param {string} vertexKey
    * @returns GraphVertex
    */
@@ -27,6 +29,7 @@ export default class Graph {
   }
 
   /**
+   * 获取邻边
    * @param {GraphVertex} vertex
    * @returns {GraphVertex[]}
    */
@@ -35,6 +38,7 @@ export default class Graph {
   }
 
   /**
+   * 获取所有顶点
    * @return {GraphVertex[]}
    */
   getAllVertices() {
@@ -42,6 +46,7 @@ export default class Graph {
   }
 
   /**
+   * 获取所有边
    * @return {GraphEdge[]}
    */
   getAllEdges() {

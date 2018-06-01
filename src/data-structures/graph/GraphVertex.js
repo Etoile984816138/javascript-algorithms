@@ -24,7 +24,7 @@ export default class GraphVertex {
     // Normally you would store string value like vertex name.
     // But generally it may be any object as well
     this.value = value;
-    this.edges = new LinkedList(edgeComparator);
+    this.edges = new LinkedList(edgeComparator); // 定义成链表
   }
 
   /**
