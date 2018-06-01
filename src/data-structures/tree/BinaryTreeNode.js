@@ -56,14 +56,17 @@ export default class BinaryTreeNode {
    */
   setLeft(node) {
     // Reset parent for left node since it is going to be detached.
+    // 先将该节点的左子树分离出来
     if (this.left) {
       this.left.parent = null;
     }
 
     // Attach new node to the left.
+    // 将左子树的指针指向新节点
     this.left = node;
 
     // Make current node to be a parent for new left one.
+    // 使当前节点成为新的左子树的父节点
     if (this.left) {
       this.left.parent = this;
     }
@@ -135,6 +138,7 @@ export default class BinaryTreeNode {
 
   /**
    * @return {*[]}
+   * 交换左右子树
    */
   traverseInOrder() {
     let traverse = [];
